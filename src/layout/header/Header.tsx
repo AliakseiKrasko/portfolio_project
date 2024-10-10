@@ -16,9 +16,9 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     display: flex;
-    width: 80%;
+    //width: 80%;
     margin: 0 auto;
     background-color: #282C33;
     min-height: 61px;
     justify-content: space-between;
-    padding: 5px 20px;`
+    padding: 20px 60px;`

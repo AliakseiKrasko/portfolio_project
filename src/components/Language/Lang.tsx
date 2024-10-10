@@ -13,7 +13,7 @@ export const Lang = () => {
 
 const StyledLang = styled.div`
     position: absolute;
-    top: 24px;
-    right: 130px;
+    top: 38px;
+    right: 50px;
     `
 
