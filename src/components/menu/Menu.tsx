@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {Logo} from "../logo/Logo";
+import {Lang} from "../Language/Lang";
 
 export const Menu = () => {
     return (
@@ -17,6 +19,9 @@ export const Menu = () => {
                 <li>
                     <a href=""><span>#</span>contacts</a>
                 </li>
+                <li>
+                    <Lang />
+                </li>
 
             </ul>
         </StyledMenu>
@@ -29,12 +34,15 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 30px;
         list-style: none;
-        margin: 20px;
-        color: #FFFFFF
+        margin-right: 30px;
+        color: #FFFFFF;
+        justify-content: space-between;
+        align-items: end;
     }
+    
 
     ul > li > a {
-        color: #fff;
+        color: #ABB2BF;
         text-decoration: none;
     }
 
