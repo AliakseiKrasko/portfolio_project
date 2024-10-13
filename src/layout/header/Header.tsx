@@ -8,7 +8,6 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
-            {/*<LogoName />*/}
             <Menu/>
 
         </StyledHeader>

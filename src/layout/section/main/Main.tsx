@@ -21,7 +21,6 @@ export const Main = () => {
 
 const StyledMain = styled.div` 
     min-height: 100vh;
-    //width: 80%;
     margin: 0 auto;
     background-color: #282C33;
     padding: 5px 20px;
