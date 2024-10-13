@@ -9,7 +9,7 @@ export const Main = () => {
         <StyledMain>
             <FlexWrapper align="center" justify="space-around">
                 <div>
-                    <StyledMainText>Alex is a <StyledName>frontend developer</StyledName></StyledMainText>
+                    <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend developer</StyledName></StyledMainText>
                     <StyledText>He crafts responsive websites where technologies meet creativity</StyledText>
 
                 </div>
