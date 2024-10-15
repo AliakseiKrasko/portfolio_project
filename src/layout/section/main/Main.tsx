@@ -3,6 +3,7 @@ import styled from "styled-components";
 import photo from './../../../assets/images/Image.png'
 import {FlexWrapper} from './../../../components/FlexWrapper';
 import {Menu} from "../../../components/menu/Menu";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
@@ -13,6 +14,8 @@ export const Main = () => {
                     <StyledText>He crafts responsive websites where technologies meet creativity</StyledText>
 
                 </div>
+                <Icon iconId={`logoSquare`} fill={`#C778DD`}/>
+                <Icon iconId={`square`} fill={`#FFFFFF`} />
                 <Photo src={photo} alt="img"/>
             </FlexWrapper>
         </StyledMain>
