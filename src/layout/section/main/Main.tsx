@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import photo from './../../../assets/images/Image.png'
-import {FlexWrapper} from './../../../components/FlexWrapper';
+import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Menu} from "../../../components/menu/Menu";
 import {Icon} from "../../../components/icon/Icon";
 
@@ -15,9 +15,15 @@ export const Main = () => {
                     <StyledText>He crafts responsive websites where technologies meet creativity</StyledText>
                     <StyledButton>Contact me !!</StyledButton>
                 </StyledSection>
-                <Icon iconId='logoSquare' fill={`#C778DD`} height={`156`} width={`156`} viewBox={`0 0 156 156`}/>
-                <Photo src={photo} alt="img"/>
-                <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`} style={{ position: 'absolute', left: '10px', top: '10px' }} />
+                <Icon iconId='logoSquare' fill={`#C778DD`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
+                      style={{ position: 'absolute', right: '486px', top: '200px' }} />
+                <StyledPhoto src={photo} alt="img"/>
+                <StyledButtonWorks>
+                    <Icon iconId={`iconColor`}/>
+                    Currently working on Portfolio
+                </StyledButtonWorks>
+                <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
+                      style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
             </FlexWrapper>
         </StyledMain>
     );
@@ -27,9 +33,12 @@ export const Main = () => {
 const StyledSection = styled.div` 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     min-width: 512px;
-    position: relative;
+    margin-top: 30px;
+    position: absolute;
+    left: 171px;
+    top: 140px;
 `
 
 const StyledMain = styled.div` 
@@ -40,10 +49,14 @@ const StyledMain = styled.div`
 
 `
 
-const Photo = styled.img`
+const StyledPhoto = styled.img`
     width: 457px;
     height: 386px;
     object-fit: contain;
+    z-index: 1;
+    position: absolute;
+    right: 171px;
+    top:115px;
 `
 const StyledButton = styled.button` 
     padding: 10px 20px;
@@ -51,6 +64,19 @@ const StyledButton = styled.button`
     background-color: transparent;
     color: #FFFFFF;
     margin-top: 20px;
+`
+const StyledButtonWorks = styled.button` 
+    padding: 10px 20px;
+    border: 1px solid #ABB2BF;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 402px;
+    height: 37px;
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    right: 206px;
+    top:501px;
 `
 
 const StyledMainText = styled.h1` 
@@ -66,9 +92,6 @@ const StyledName = styled.span`
     color: #C778DD;
 `
 
-const StyledIcon = styled(Icon)` 
-    position: absolute;
-    left: 10px;
-    top: 10px;
-`
+
+
 
