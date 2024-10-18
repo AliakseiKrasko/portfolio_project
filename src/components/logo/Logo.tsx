@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Logo = () => {
     return (
         <StyledLogo href="">
-            <Icon iconId={`code`} fill={`#C778DD`}/>   <LogoName />
+            <Icon iconId={`code`} width={`30`} height={`30`} fill={`#C778DD`}/>   <LogoName />
         </StyledLogo>
 
 
@@ -23,14 +23,14 @@ export const LogoName = () => {
 const StyledLogo = styled.a ` 
     display: flex;
     text-decoration: none;
-
+    align-items: center;
 `
 
 const StyledLogoName = styled.h2` 
     color: #C778DD;
     margin-left: 10px;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 20px;
     
     
 `

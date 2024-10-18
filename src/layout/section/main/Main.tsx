@@ -10,6 +10,12 @@ export const Main = () => {
     return (
         <StyledMain>
             <FlexWrapper align="center" justify="space-around">
+                <StyledSocialIcon>
+                    <StyledSpan></StyledSpan>
+                    <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
+                    <Icon iconId={`dribble`} fill={`#ABB2BF`} width={`52`}/>
+                    <Icon iconId={`figma`} fill={`#ABB2BF`} width={`52`}/>
+                </StyledSocialIcon>
                 <StyledSection>
                     <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend developer</StyledName></StyledMainText>
                     <StyledText>He crafts responsive websites where technologies meet creativity</StyledText>
@@ -24,6 +30,7 @@ export const Main = () => {
                 </StyledButtonWorks>
                 <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
                       style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
+                <StyledQuote>With great power comes great electricity bill</StyledQuote>
             </FlexWrapper>
         </StyledMain>
     );
@@ -92,6 +99,35 @@ const StyledName = styled.span`
     color: #C778DD;
 `
 
+const StyledSocialIcon = styled.div` 
+    display: flex;
+    flex-direction: column;
+    min-width: 52px;
+    align-items: start;
+    position: absolute;
+    top: 0;
+    left: 17px;
+`
+const StyledSpan = styled.span` 
+    width: 1px;
+    height: 191px;
+    background: #ABB2BF;
+    margin-left: 15px;
+    margin-bottom: 10px;
+`
+
+const StyledQuote = styled.div` 
+    min-width: 712px;
+    height: 35px;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ABB2BF;
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    
+`
 
 
 
