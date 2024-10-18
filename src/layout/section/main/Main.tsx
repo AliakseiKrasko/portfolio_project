@@ -17,7 +17,7 @@ export const Main = () => {
                 </StyledSection>
                 <Icon iconId='logoSquare' fill={`#C778DD`} height={`156`} width={`156`} viewBox={`0 0 156 156`}/>
                 <Photo src={photo} alt="img"/>
-                <Icon iconId='square' fill={`#C778DD`}/>
+                <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`} style={{ position: 'absolute', left: '10px', top: '10px' }} />
             </FlexWrapper>
         </StyledMain>
     );
@@ -28,6 +28,8 @@ const StyledSection = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 512px;
+    position: relative;
 `
 
 const StyledMain = styled.div` 
@@ -62,5 +64,11 @@ const StyledText = styled.p`
 
 const StyledName = styled.span` 
     color: #C778DD;
+`
+
+const StyledIcon = styled(Icon)` 
+    position: absolute;
+    left: 10px;
+    top: 10px;
 `
 
