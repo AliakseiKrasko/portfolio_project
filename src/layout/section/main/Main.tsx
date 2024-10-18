@@ -31,6 +31,12 @@ export const Main = () => {
                 <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
                       style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
                 <StyledQuote>With great power comes great electricity bill</StyledQuote>
+                <StyledQuoteMini>- Dr. Who</StyledQuoteMini>
+                <Icon iconId={`qutes`}
+                      style={{ position: 'absolute', left: '412px', bottom: '180px' }} zIndex={2}/>
+                <Icon iconId={`qutes`}
+                      style={{ position: 'absolute', right: '344px', bottom: '-15px' }} zIndex={2}/>
+                <StyledSquare></StyledSquare>
             </FlexWrapper>
         </StyledMain>
     );
@@ -49,11 +55,13 @@ const StyledSection = styled.div`
 `
 
 const StyledMain = styled.div` 
-    min-height: 100vh;
+    min-height: 120vh;
     margin: 0 auto;
     background-color: #282C33;
     padding: 5px 20px;
-
+    font-family: 'Fira Code', monospace;
+    position: relative;
+    overflow: hidden;
 `
 
 const StyledPhoto = styled.img`
@@ -71,6 +79,7 @@ const StyledButton = styled.button`
     background-color: transparent;
     color: #FFFFFF;
     margin-top: 20px;
+    font-family: 'Fira Code', monospace;
 `
 const StyledButtonWorks = styled.button` 
     padding: 10px 20px;
@@ -84,6 +93,7 @@ const StyledButtonWorks = styled.button`
     position: absolute;
     right: 206px;
     top:501px;
+    font-family: 'Fira Code', monospace;
 `
 
 const StyledMainText = styled.h1` 
@@ -104,9 +114,10 @@ const StyledSocialIcon = styled.div`
     flex-direction: column;
     min-width: 52px;
     align-items: start;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 17px;
+    
 `
 const StyledSpan = styled.span` 
     width: 1px;
@@ -117,6 +128,7 @@ const StyledSpan = styled.span`
 `
 
 const StyledQuote = styled.div` 
+    display: flex;
     min-width: 712px;
     height: 35px;
     padding: 32px;
@@ -124,8 +136,35 @@ const StyledQuote = styled.div`
     justify-content: center;
     border: 1px solid #ABB2BF;
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     left: 400px;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 60px auto;
+`
+
+const StyledQuoteMini = styled.div` 
+    display: flex;
+    min-width: 163px;
+    height: 30px;
+    padding: 32px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ABB2BF;
+    position: absolute;
+    bottom: 20px;
+    left: 949px;
+    color: #FFFFFF;
+    font-size: 24px;
+`
+
+const StyledSquare = styled.span` 
+    min-width: 90px;
+    height: 90px;
+    border: 1px solid #ABB2BF;
+    position: absolute;
+    right: -8px;
+    bottom: 55px;
     
 `
 
