@@ -18,7 +18,8 @@ export const Main = () => {
                 </StyledSocialIcon>
                 <StyledSection>
                     <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend developer</StyledName></StyledMainText>
-                    <StyledText>He crafts responsive websites where technologies meet creativity</StyledText>
+                    <StyledText>He builds responsive websites and interactive web applications where {'\n'}
+                        technology meets creativity</StyledText>
                     <StyledButton>Contact me !!</StyledButton>
                 </StyledSection>
                 <Icon iconId='logoSquare' fill={`#C778DD`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
@@ -30,8 +31,8 @@ export const Main = () => {
                 </StyledButtonWorks>
                 <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
                       style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
-                <StyledQuote>With great power comes great electricity bill</StyledQuote>
-                <StyledQuoteMini>- Dr. Who</StyledQuoteMini>
+                <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with elegance</StyledQuote>
+                <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
                 <Icon iconId={`qutes`}
                       style={{ position: 'absolute', left: '412px', bottom: '180px' }} zIndex={2}/>
                 <Icon iconId={`qutes`}
@@ -102,7 +103,8 @@ const StyledMainText = styled.h1`
 
 const StyledText = styled.p`
     color: #ABB2BF;
-
+    white-space: pre-line;
+    line-height: 1.6;
 `
 
 const StyledName = styled.span` 
@@ -139,7 +141,7 @@ const StyledQuote = styled.div`
     bottom: 55px;
     left: 400px;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 16px;
     margin: 60px auto;
 `
 
@@ -153,9 +155,9 @@ const StyledQuoteMini = styled.div`
     border: 1px solid #ABB2BF;
     position: absolute;
     bottom: 20px;
-    left: 949px;
+    left: 919px;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 16px;
 `
 
 const StyledSquare = styled.span` 
