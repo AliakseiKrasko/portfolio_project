@@ -34,7 +34,7 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 30px;
         list-style: none;
-        margin-right: 30px;
+        margin-right: 90px;
         color: #FFFFFF;
         justify-content: space-between;
         align-items: end;

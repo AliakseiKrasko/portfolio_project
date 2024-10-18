@@ -16,12 +16,12 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     display: flex;
-    //width: 80%;
     margin: 0 auto;
     background-color: #282C33;
     min-height: 61px;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 23px;
     font-family: 'Fira Code', monospace;
     padding-left: 170px;
+    
 `
