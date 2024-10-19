@@ -10,17 +10,19 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle>skills</SectionTitle>
-            <FlexWrapper justify="space-between">
-                <Skill/>
-                <Skill/>
-                <Skill/>
-                <Skill/>
+            <FlexWrapper justify="flex-end" wrap="wrap">
+                <Skill iconId={"github"} title="Languages"/>
+                <Skill iconId={"github"} title="Databases"/>
+                <Skill iconId={"github"} title="Other"/>
+                <Skill iconId={"github"} title="Tools"/>
+                <Skill iconId={"github"} title="Frameworks"/>
             </FlexWrapper>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-    width: 80%;
-    margin: 0 auto;
+    width: 50%;
+    margin-left: auto;
+    
 `
