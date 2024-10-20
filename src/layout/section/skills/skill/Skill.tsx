@@ -1,10 +1,15 @@
 import React from 'react';
-import {Icon} from "../../../../components/icon/Icon";
+import { Icon } from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
-type SkillPropsType = {
+type SkillIconType = {
     iconId: string;
+    skillTitle: string;
+}
+
+type SkillPropsType = {
     title: string;
+    skills: SkillIconType[]; // Массив иконок с текстом
     gridColumn?: number;
     gridRow?: number;
 }
@@ -13,20 +18,22 @@ export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill gridColumn={props.gridColumn} gridRow={props.gridRow}>
             <SkillCardTitle>{props.title}</SkillCardTitle>
-            <SkillIcon>
-                <Icon iconId={props.iconId}/>
-                <SkillTitle>TypeScript</SkillTitle>
-            </SkillIcon>
-
+            {props.skills.map((skill, index) => (
+                <SkillIcon key={index}>
+                    <Icon iconId={skill.iconId} />
+                    <SkillTitle>{skill.skillTitle}</SkillTitle>
+                </SkillIcon>
+            ))}
         </StyledSkill>
     );
 };
 
 const SkillCardTitle = styled.h3`
-    padding: 20px 40px;
+    padding: 10px 20px;
     border-bottom: 1px solid #ABB2BF;
     color: #FFFFFF;
-`
+    margin: 0;
+`;
 
 const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
     display: flex;
@@ -36,21 +43,18 @@ const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    grid-column: ${props => props.gridColumn || 'auto'};  
-    grid-row: ${props => props.gridRow || 'auto'};        
-`
-
+    grid-column: ${props => props.gridColumn || 'auto'};
+    grid-row: ${props => props.gridRow || 'auto'};
+`;
 
 const SkillTitle = styled.h4`
     color: #ABB2BF;
-    margin-top: 0;
-    
-`
-const SkillText = styled.p`
-    color: #ABB2BF;
-`
+    margin: 0;
+`;
+
 const SkillIcon = styled.div`
     display: flex;
     align-items: center;
+    
+`;
 
-`

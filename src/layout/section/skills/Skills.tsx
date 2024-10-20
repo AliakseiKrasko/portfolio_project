@@ -13,11 +13,58 @@ export const Skills = () => {
             <Wrapper>
                 <IconBlock/>
                 <StyledGrid>
-                    <Skill iconId={"github"} title="Languages" gridColumn={1} gridRow={1}/>
-                    <Skill iconId={"github"} title="Databases" gridColumn={2} gridRow={1}/>
-                    <Skill iconId={"github"} title="Other" gridColumn={2} gridRow={2}/>
-                    <Skill iconId={"github"} title="Tools" gridColumn={3} gridRow={1}/>
-                    <Skill iconId={"github"} title="Frameworks" gridColumn={3} gridRow={2}/>
+                    <Skill
+                        title="Programming Skills"
+                        skills={[
+                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "React"},
+                            {iconId: "css-icon", skillTitle: "CSS"}
+                        ]}
+                        gridColumn={1}
+                        gridRow={1}
+                    />
+                    <Skill
+                        title="Programming Skills"
+                        skills={[
+                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "React"},
+                            {iconId: "css-icon", skillTitle: "CSS"}
+                        ]}
+                        gridColumn={2}
+                        gridRow={1}
+                    />
+                    <Skill
+                        title="Programming Skills"
+                        skills={[
+                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "React"},
+                            {iconId: "css-icon", skillTitle: "CSS"}
+                        ]}
+                        gridColumn={2}
+                        gridRow={2}
+                    />
+                    <Skill
+                        title="Programming Skills"
+                        skills={[
+                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "React"},
+                            {iconId: "css-icon", skillTitle: "CSS"}
+                        ]}
+                        gridColumn={3}
+                        gridRow={1}
+                    />
+                    <Skill
+                        title="Programming Skills"
+                        skills={[
+                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "React"},
+                            {iconId: "css-icon", skillTitle: "CSS"}
+                        ]}
+                        gridColumn={3}
+                        gridRow={2}
+                    />
+
+
                 </StyledGrid>
             </Wrapper>
         </StyledSkills>
@@ -32,7 +79,7 @@ const StyledSkills = styled.section`
     min-height: 100vh;
 `
 
-const Wrapper = styled.div` 
+const Wrapper = styled.div`
     display: flex;
     margin-top: 73px;
 `
