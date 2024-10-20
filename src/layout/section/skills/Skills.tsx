@@ -1,5 +1,4 @@
 import React from 'react';
-import {Icon} from "../../../components/icon/Icon";
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle"
 import {Skill} from "./skill/Skill";
@@ -9,7 +8,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle>skills</SectionTitle>
+            <SectionTitle title="skills"/>
             <FlexWrapper justify="flex-end" wrap="wrap">
                 <Skill iconId={"github"} title="Languages"/>
                 <Skill iconId={"github"} title="Databases"/>
@@ -23,6 +22,5 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     width: 50%;
-    margin-left: auto;
     
 `

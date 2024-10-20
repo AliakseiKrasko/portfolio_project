@@ -2,8 +2,6 @@ import React from 'react';
 import IconsSprite from './../../assets/images/logo.svg';
 
 
-
-
 type IconPropsType = {
     iconId: string;
     width?: string
