@@ -27,6 +27,8 @@ const TitleWrapper = styled.div`
 const Hash = styled.span<{ color?: string }>`
     color: ${props => props.color || '#C778DD'};
     margin-right: 8px;  /* Отступ между # и заголовком */
+    font-size: 24px;
+    font-weight: bold;
 `;
 
 const StyledTitle = styled.span<{ color?: string }>`

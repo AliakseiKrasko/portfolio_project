@@ -8,8 +8,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle title="skills"/>
-            <FlexWrapper justify="flex-end" wrap="wrap">
+            <SectionTitle title="skills" lineLength="239px"/>
+            <FlexWrapper justify="centr" wrap="wrap">
                 <Skill iconId={"github"} title="Languages"/>
                 <Skill iconId={"github"} title="Databases"/>
                 <Skill iconId={"github"} title="Other"/>
@@ -21,6 +21,8 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
+    margin-left: 173px;
+    margin-top: 73px;
     width: 50%;
-    
+    min-height: 100vh;
 `
