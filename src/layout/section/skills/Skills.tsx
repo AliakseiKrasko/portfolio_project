@@ -17,7 +17,7 @@ export const Skills = () => {
                         title="Languages"
                         skills={[
                             {iconId: "javascript" , skillTitle: "JavaScript"},
-                            {iconId: "react-icon", skillTitle: "TypeScript"},
+                            {iconId: "ts", skillTitle: "TypeScript"},
                             {iconId: "css-icon", skillTitle: "PHP"}
                         ]}
                         gridColumn={1}
@@ -37,8 +37,8 @@ export const Skills = () => {
                         title="Other"
                         skills={[
                             {iconId: "html", skillTitle: "HTML"},
-                            {iconId: "react-icon", skillTitle: "React"},
-                            {iconId: "css-icon", skillTitle: "CSS"}
+                            {iconId: "css", skillTitle: "CSS"},
+                            {iconId: "sass", skillTitle: "SASS"}
                         ]}
                         gridColumn={2}
                         gridRow={2}
