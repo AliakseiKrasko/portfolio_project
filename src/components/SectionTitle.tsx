@@ -22,7 +22,8 @@ export const SectionTitle = ({ title, color, hashColor, lineLength, lineColor }:
 const TitleWrapper = styled.div`
     display: flex;
     align-items: center;  /* Центрируем элементы по вертикали */
-`;
+    
+`
 
 const Hash = styled.span<{ color?: string }>`
     color: ${props => props.color || '#C778DD'};

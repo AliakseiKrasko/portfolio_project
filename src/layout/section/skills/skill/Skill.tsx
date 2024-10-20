@@ -3,19 +3,20 @@ import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
 type SkillPropsType = {
-   iconId: string;
+    iconId: string;
     title: string;
+    gridColumn?: number;
+    gridRow?: number;
 }
 
 export const Skill = (props: SkillPropsType) => {
     return (
-        <StyledSkill>
+        <StyledSkill gridColumn={props.gridColumn} gridRow={props.gridRow}>
             <SkillCardTitle>{props.title}</SkillCardTitle>
             <SkillIcon>
-                <Icon iconId={props.iconId}  />
+                <Icon iconId={props.iconId}/>
                 <SkillTitle>TypeScript</SkillTitle>
             </SkillIcon>
-
             <SkillText>TypeScript</SkillText>
         </StyledSkill>
     );
@@ -27,7 +28,7 @@ const SkillCardTitle = styled.h3`
     color: #FFFFFF;
 `
 
-const StyledSkill = styled.div`
+const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
     display: flex;
     flex-direction: column;
     min-width: 178px;
@@ -36,12 +37,15 @@ const StyledSkill = styled.div`
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    grid-column: ${props => props.gridColumn || 'auto'};  
+    grid-row: ${props => props.gridRow || 'auto'};        
 `
 
 
 const SkillTitle = styled.h4`
     color: #ABB2BF;
     margin-top: 0;
+    
 `
 const SkillText = styled.p`
     color: #ABB2BF;
@@ -49,5 +53,5 @@ const SkillText = styled.p`
 const SkillIcon = styled.div`
     display: flex;
     align-items: center;
-    
+
 `
