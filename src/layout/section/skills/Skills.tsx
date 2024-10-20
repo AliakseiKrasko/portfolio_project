@@ -14,19 +14,19 @@ export const Skills = () => {
                 <IconBlock/>
                 <StyledGrid>
                     <Skill
-                        title="Programming Skills"
+                        title="Languages"
                         skills={[
-                            {iconId: "js-icon", skillTitle: "JavaScript"},
-                            {iconId: "react-icon", skillTitle: "React"},
-                            {iconId: "css-icon", skillTitle: "CSS"}
+                            {iconId: "javascript" , skillTitle: "JavaScript"},
+                            {iconId: "react-icon", skillTitle: "TypeScript"},
+                            {iconId: "css-icon", skillTitle: "PHP"}
                         ]}
                         gridColumn={1}
                         gridRow={1}
                     />
                     <Skill
-                        title="Programming Skills"
+                        title="Databases"
                         skills={[
-                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "javascript", skillTitle: "JavaScript"},
                             {iconId: "react-icon", skillTitle: "React"},
                             {iconId: "css-icon", skillTitle: "CSS"}
                         ]}
@@ -34,9 +34,9 @@ export const Skills = () => {
                         gridRow={1}
                     />
                     <Skill
-                        title="Programming Skills"
+                        title="Other"
                         skills={[
-                            {iconId: "js-icon", skillTitle: "JavaScript"},
+                            {iconId: "html", skillTitle: "HTML"},
                             {iconId: "react-icon", skillTitle: "React"},
                             {iconId: "css-icon", skillTitle: "CSS"}
                         ]}
@@ -44,21 +44,21 @@ export const Skills = () => {
                         gridRow={2}
                     />
                     <Skill
-                        title="Programming Skills"
+                        title="Tools"
                         skills={[
-                            {iconId: "js-icon", skillTitle: "JavaScript"},
-                            {iconId: "react-icon", skillTitle: "React"},
-                            {iconId: "css-icon", skillTitle: "CSS"}
+                            {iconId: "js-icon", skillTitle: "VSCode"},
+                            {iconId: "react-icon", skillTitle: "Figma"},
+                            {iconId: "css-icon", skillTitle: "Git"}
                         ]}
                         gridColumn={3}
                         gridRow={1}
                     />
                     <Skill
-                        title="Programming Skills"
+                        title="Frameworks"
                         skills={[
                             {iconId: "js-icon", skillTitle: "JavaScript"},
-                            {iconId: "react-icon", skillTitle: "React"},
-                            {iconId: "css-icon", skillTitle: "CSS"}
+                            {iconId: "react-icon", skillTitle: "TypeScript"},
+                            {iconId: "css-icon", skillTitle: "PHP"}
                         ]}
                         gridColumn={3}
                         gridRow={2}

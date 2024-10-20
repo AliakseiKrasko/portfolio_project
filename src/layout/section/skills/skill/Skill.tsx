@@ -1,10 +1,11 @@
 import React from 'react';
-import { Icon } from "../../../../components/icon/Icon";
+import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
 type SkillIconType = {
     iconId: string;
     skillTitle: string;
+
 }
 
 type SkillPropsType = {
@@ -20,7 +21,7 @@ export const Skill = (props: SkillPropsType) => {
             <SkillCardTitle>{props.title}</SkillCardTitle>
             {props.skills.map((skill, index) => (
                 <SkillIcon key={index}>
-                    <Icon iconId={skill.iconId} />
+                    <Icon iconId={skill.iconId} width="20px" height="20px" viewBox="0 0 200 200" />
                     <SkillTitle>{skill.skillTitle}</SkillTitle>
                 </SkillIcon>
             ))}
@@ -33,6 +34,7 @@ const SkillCardTitle = styled.h3`
     border-bottom: 1px solid #ABB2BF;
     color: #FFFFFF;
     margin: 0;
+    
 `;
 
 const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
@@ -50,6 +52,7 @@ const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
 const SkillTitle = styled.h4`
     color: #ABB2BF;
     margin: 0;
+    padding: 10px;
 `;
 
 const SkillIcon = styled.div`
