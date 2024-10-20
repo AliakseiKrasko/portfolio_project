@@ -17,7 +17,7 @@ export const Skill = (props: SkillPropsType) => {
                 <Icon iconId={props.iconId}/>
                 <SkillTitle>TypeScript</SkillTitle>
             </SkillIcon>
-            <SkillText>TypeScript</SkillText>
+
         </StyledSkill>
     );
 };
@@ -36,7 +36,6 @@ const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
     grid-column: ${props => props.gridColumn || 'auto'};  
     grid-row: ${props => props.gridRow || 'auto'};        
 `
