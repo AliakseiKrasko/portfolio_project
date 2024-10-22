@@ -42,7 +42,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     min-height: 30vh;
-
+    margin-top: 48px;
 `
 const Name = styled.span`
     color: #FFFFFF;
