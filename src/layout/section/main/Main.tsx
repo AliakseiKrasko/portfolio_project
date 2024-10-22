@@ -3,7 +3,7 @@ import styled from "styled-components";
 import photo from './../../../assets/images/Image.png'
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Icon} from "../../../components/icon/Icon";
-
+import {StyledButton} from "../../../components/StyledButton";
 
 export const Main = () => {
     return (
@@ -19,7 +19,7 @@ export const Main = () => {
                     <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend developer</StyledName></StyledMainText>
                     <StyledText>He builds responsive websites and interactive web applications where {'\n'}
                         technology meets creativity</StyledText>
-                    <StyledButton>Contact me !!</StyledButton>
+                    <StyledButton margin="20px">Contact me !!</StyledButton>
                 </StyledSection>
                 <Icon iconId='logoSquare' fill={`#E4A2E7`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
                       style={{ position: 'absolute', right: '486px', top: '200px' }} />
@@ -73,14 +73,14 @@ const StyledPhoto = styled.img`
     right: 171px;
     top:115px;
 `
-const StyledButton = styled.button` 
-    padding: 10px 20px;
-    border: 1px solid #E4A2E7;
-    background-color: transparent;
-    color: #FFFFFF;
-    margin-top: 20px;
-    font-family: 'Fira Code', monospace;
-`
+// const StyledButton = styled.button`
+//     padding: 10px 20px;
+//     border: 1px solid #E4A2E7;
+//     background-color: transparent;
+//     color: #FFFFFF;
+//     margin-top: 20px;
+//     font-family: 'Fira Code', monospace;
+// `
 const StyledButtonWorks = styled.button` 
     padding: 10px 20px;
     border: 1px solid #ABB2BF;

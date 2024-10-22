@@ -76,7 +76,7 @@ const StyledSkills = styled.section`
     margin-left: 173px;
     margin-top: 73px;
     width: 80%;
-    min-height: 100vh;
+    min-height: 90vh;
 `
 
 const Wrapper = styled.div`
