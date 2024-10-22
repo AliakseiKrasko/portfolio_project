@@ -18,7 +18,7 @@ export const Skills = () => {
                         skills={[
                             {iconId: "javascript" , skillTitle: "JavaScript"},
                             {iconId: "ts", skillTitle: "TypeScript"},
-                            {iconId: "css-icon", skillTitle: "PHP"}
+                            {iconId: "bootstrap", skillTitle: "PHP"}
                         ]}
                         gridColumn={1}
                         gridRow={1}
@@ -26,7 +26,7 @@ export const Skills = () => {
                     <Skill
                         title="Databases"
                         skills={[
-                            {iconId: "javascript", skillTitle: "JavaScript"},
+                            {iconId: "bootstrap", skillTitle: "JavaScript"},
                             {iconId: "react-icon", skillTitle: "React"},
                             {iconId: "css-icon", skillTitle: "CSS"}
                         ]}

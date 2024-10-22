@@ -58,6 +58,7 @@ const SkillTitle = styled.h4`
 const SkillIcon = styled.div`
     display: flex;
     align-items: center;
+    overflow: visible;
     
 `;
 
