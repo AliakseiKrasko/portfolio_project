@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {Logo} from "../logo/Logo";
-import {Lang} from "../Language/Lang";
+
+
 
 export const Menu = () => {
     return (
@@ -20,7 +20,7 @@ export const Menu = () => {
                     <a href=""><span>#</span>contacts</a>
                 </li>
                 <li>
-                    <Lang />
+                    <p>EN &#x2C5;</p>
                 </li>
 
             </ul>
@@ -39,14 +39,21 @@ const StyledMenu = styled.nav`
         justify-content: space-between;
         align-items: end;
     }
-    
 
+    ul > li > p {
+        margin-left: 20px;
+        color: #ABB2BF;
+    }
+    
     ul > li > a {
         color: #ABB2BF;
         text-decoration: none;
     }
 
     ul > li > a > span {
-        color: #E4A2E7;
-    ;
+        color: #E4A2E7;;
+
+        
+
     }`
+

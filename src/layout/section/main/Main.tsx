@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import photo from './../../../assets/images/Image.png'
 import {FlexWrapper} from '../../../components/FlexWrapper';
-import {Menu} from "../../../components/menu/Menu";
 import {Icon} from "../../../components/icon/Icon";
 
 
@@ -34,7 +33,7 @@ export const Main = () => {
                 <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with elegance</StyledQuote>
                 <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
                 <Icon iconId={`qutes`}
-                      style={{ position: 'absolute', left: '412px', bottom: '180px' }} zIndex={2}/>
+                      style={{ position: 'absolute', left: '412px', bottom: '145px' }} zIndex={2}/>
                 <Icon iconId={`qutes`}
                       style={{ position: 'absolute', right: '344px', bottom: '-15px' }} zIndex={2}/>
                 <StyledSquare></StyledSquare>
