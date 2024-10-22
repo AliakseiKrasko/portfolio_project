@@ -47,6 +47,6 @@ const StyledMenu = styled.nav`
     }
 
     ul > li > a > span {
-        color: #C778DD;
+        color: #E4A2E7;
     ;
     }`

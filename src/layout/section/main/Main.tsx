@@ -22,14 +22,14 @@ export const Main = () => {
                         technology meets creativity</StyledText>
                     <StyledButton>Contact me !!</StyledButton>
                 </StyledSection>
-                <Icon iconId='logoSquare' fill={`#C778DD`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
+                <Icon iconId='logoSquare' fill={`#E4A2E7`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
                       style={{ position: 'absolute', right: '486px', top: '200px' }} />
                 <StyledPhoto src={photo} alt="img"/>
                 <StyledButtonWorks>
                     <Icon iconId={`iconColor`}/>
                     Currently working on Portfolio
                 </StyledButtonWorks>
-                <Icon iconId='square' fill={`#C778DD`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
+                <Icon iconId='square' fill={`#E4A2E7`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
                       style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
                 <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with elegance</StyledQuote>
                 <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
@@ -76,7 +76,7 @@ const StyledPhoto = styled.img`
 `
 const StyledButton = styled.button` 
     padding: 10px 20px;
-    border: 1px solid #C778DD;
+    border: 1px solid #E4A2E7;
     background-color: transparent;
     color: #FFFFFF;
     margin-top: 20px;
@@ -108,7 +108,7 @@ const StyledText = styled.p`
 `
 
 const StyledName = styled.span` 
-    color: #C778DD;
+    color: #E4A2E7;
 `
 
 const StyledSocialIcon = styled.div` 
