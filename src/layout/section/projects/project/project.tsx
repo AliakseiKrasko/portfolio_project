@@ -41,13 +41,15 @@ const StyledCard = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  width: 100%;
-  height: 150px; /* Половина карточки */
-  img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    height: 150px; /* Половина карточки */
+    border-bottom: 1px solid #ABB2BF;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 `;
 
 const CardBody = styled.div`
@@ -55,11 +57,12 @@ const CardBody = styled.div`
     text-align: start;
     color: #ABB2BF;
     position: relative;
-
+    
 
     p:first-of-type {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        
     }
 
     .separator {
@@ -79,7 +82,7 @@ const CardBody = styled.div`
 const ButtonWrapper = styled.div`
     display: flex;
     justify-content: start;
-    margin-top: 10px;
+    margin-top: 20px;
     
 `;
 
