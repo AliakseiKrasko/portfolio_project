@@ -35,7 +35,7 @@ export const Main = () => {
                 <Icon iconId={`qutes`}
                       style={{ position: 'absolute', left: '412px', bottom: '145px' }} zIndex={2}/>
                 <Icon iconId={`qutes`}
-                      style={{ position: 'absolute', right: '344px', bottom: '-15px' }} zIndex={2}/>
+                      style={{ position: 'absolute', right: '427px', bottom: '-15px' }} zIndex={2}/>
                 <StyledSquare></StyledSquare>
             </FlexWrapper>
         </StyledMain>
