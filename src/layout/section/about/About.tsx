@@ -84,5 +84,5 @@ const StyledImage = styled.img`
     justify-content: center;
     position: absolute;
     right: 180px;
-    top: 2400px;
+    top: 2130px;
 `

@@ -33,9 +33,9 @@ export const Main = () => {
                 <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with elegance</StyledQuote>
                 <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
                 <Icon iconId={`qutes`}
-                      style={{ position: 'absolute', left: '412px', bottom: '145px' }} zIndex={2}/>
+                      style={{ position: 'absolute', left: '412px', top: '665px' }} zIndex={2}/>
                 <Icon iconId={`qutes`}
-                      style={{ position: 'absolute', right: '427px', bottom: '-15px' }} zIndex={2}/>
+                      style={{ position: 'absolute', right: '212px', top: '730px' }} zIndex={2}/>
                 <StyledSquare></StyledSquare>
             </FlexWrapper>
         </StyledMain>
@@ -49,7 +49,7 @@ const StyledSection = styled.div`
     flex-direction: column;
     align-items: start;
     //min-width: 512px;
-    margin-top: 180px;
+    margin-top: 200px;
     //position: absolute;
     //left: 171px;
     //top: 140px;
@@ -74,7 +74,7 @@ const StyledPhoto = styled.img`
     z-index: 1;
     position: absolute;
     right: 171px;
-    top:115px;
+    top:120px;
 `
 // const StyledButton = styled.button`
 //     padding: 10px 20px;
@@ -140,7 +140,7 @@ const StyledQuote = styled.div`
     justify-content: center;
     border: 1px solid #ABB2BF;
     position: absolute;
-    bottom: 55px;
+    top: 620px;
     left: 400px;
     color: #FFFFFF;
     font-size: 16px;
@@ -156,8 +156,8 @@ const StyledQuoteMini = styled.div`
     justify-content: center;
     border: 1px solid #ABB2BF;
     position: absolute;
-    bottom: 20px;
-    left: 919px;
+    top: 745px;
+    left: 966px;
     color: #FFFFFF;
     font-size: 16px;
 `
@@ -167,8 +167,8 @@ const StyledSquare = styled.span`
     height: 90px;
     border: 1px solid #ABB2BF;
     position: absolute;
-    right: -8px;
-    bottom: 55px;
+    right: -15px;
+    top: 710px;
     
 `
 
