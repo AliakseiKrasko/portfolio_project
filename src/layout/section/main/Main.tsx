@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import photo from './../../../assets/images/Image.png'
+import photo from './../../../assets/images/Group 46.svg'
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Icon} from "../../../components/icon/Icon";
 import {StyledButton} from "../../../components/StyledButton";
@@ -8,7 +8,7 @@ import {StyledButton} from "../../../components/StyledButton";
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper align="center" justify="space-around">
+            <FlexWrapper align="center" justify="space-beetween">
                 <StyledSocialIcon>
                     <StyledSpan></StyledSpan>
                     <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
@@ -21,15 +21,15 @@ export const Main = () => {
                         technology meets creativity</StyledText>
                     <StyledButton margin="20px">Contact me !!</StyledButton>
                 </StyledSection>
-                <Icon iconId='logoSquare' fill={`#E4A2E7`} height={`156`} width={`156`} viewBox={`0 0 156 156`}
-                      style={{ position: 'absolute', right: '486px', top: '200px' }} />
+                {/*<Icon iconId='logoSquare' fill={`#E4A2E7`} height={`156`} width={`156`} viewBox={`0 0 156 156`}*/}
+                {/*      style={{ position: 'absolute', right: '486px', top: '200px' }} />*/}
                 <StyledPhoto src={photo} alt="img"/>
                 <StyledButtonWorks>
                     <Icon iconId={`iconColor`}/>
                     Currently working on Portfolio
                 </StyledButtonWorks>
-                <Icon iconId='square' fill={`#E4A2E7`} height={`84`} width={`84`} viewBox={`0 0 84 84`}
-                      style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />
+                {/*<Icon iconId='square' fill={`#E4A2E7`} height={`84`} width={`84`} viewBox={`0 0 84 84`}*/}
+                {/*      style={{ position: 'absolute', right: '191px', top: '360px' }} zIndex={2} />*/}
                 <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with elegance</StyledQuote>
                 <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
                 <Icon iconId={`qutes`}
@@ -45,22 +45,25 @@ export const Main = () => {
 
 const StyledSection = styled.div` 
     display: flex;
+    min-width: 50%;
     flex-direction: column;
     align-items: start;
-    min-width: 512px;
-    margin-top: 30px;
-    position: absolute;
-    left: 171px;
-    top: 140px;
+    //min-width: 512px;
+    margin-top: 180px;
+    //position: absolute;
+    //left: 171px;
+    //top: 140px;
 `
 
 const StyledMain = styled.div` 
     min-height: 120vh;
+    max-width: 80%;
     margin: 0 auto;
+    justify-content: space-between;
     background-color: #282C33;
-    padding: 5px 20px;
+    //padding: 5px 20px;
     font-family: 'Fira Code', monospace;
-    position: relative;
+    //position: relative;
     overflow: hidden;
 `
 
@@ -118,7 +121,7 @@ const StyledSocialIcon = styled.div`
     position: fixed;
     top: 0;
     left: 17px;
-    
+    z-index: 9999;
 `
 const StyledSpan = styled.span` 
     width: 1px;

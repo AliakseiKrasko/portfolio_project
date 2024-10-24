@@ -23,10 +23,15 @@ const StyledHeader = styled.header`
     display: flex;
     margin: 0 auto;
     background-color: #282C33;
+    max-width: 80%;
     min-height: 61px;
     justify-content: space-between;
     padding-top: 23px;
     font-family: 'Fira Code', monospace;
-    padding-left: 170px;
-
+    //padding-left: 170px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
 `
