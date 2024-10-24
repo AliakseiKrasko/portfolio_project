@@ -122,6 +122,11 @@ const StyledSocialIcon = styled.div`
     top: 0;
     left: 17px;
     z-index: 9999;
+    
+    &:hover {
+        cursor: pointer;
+       
+    }
 `
 const StyledSpan = styled.span` 
     width: 1px;

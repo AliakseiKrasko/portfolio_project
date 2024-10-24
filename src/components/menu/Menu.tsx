@@ -43,11 +43,21 @@ const StyledMenu = styled.nav`
     ul > li > p {
         margin-left: 20px;
         color: #ABB2BF;
+        
+        
+        &:hover {
+            color: #FFFFFF;
+            cursor: pointer;
+        }
     }
     
     ul > li > a {
         color: #ABB2BF;
         text-decoration: none;
+        
+        &:hover {
+            color: #FFFFFF;
+        }
     }
 
     ul > li > a > span {
