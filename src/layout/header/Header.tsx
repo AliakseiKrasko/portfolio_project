@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo";
-import {Menu} from "../../components/menu/Menu";
+import {Menu} from "./headerMenu/Menu";
 
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 
 export const Header = () => {
     return (
@@ -13,6 +14,7 @@ export const Header = () => {
                 <FlexWrapper justify="space-between" align="center">
                     <Logo/>
                     <Menu/>
+                    {/*<MobileMenu/>*/}
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -23,7 +25,7 @@ const StyledHeader = styled.header`
     display: flex;
     margin: 0 auto;
     background-color: #282C33;
-    max-width: 80%;
+    //max-width: 80%;
     min-height: 61px;
     justify-content: space-between;
     padding-top: 23px;

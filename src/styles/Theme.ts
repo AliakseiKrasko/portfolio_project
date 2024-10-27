@@ -1,8 +1,8 @@
-export const Theme = {
+export const theme = {
     colors: {
-        primaryBg: '#FFFFFF',
-        secondaryBg: '#FFFFFF',
-        accentBg: '#FFFFFF',
+        primaryBg: '#282C33',
+        secondaryBg: '#E4A2E7',
+        accent: '#ABB2BF',
 
         font: '#FFFFFF',
 
@@ -12,7 +12,7 @@ export const Theme = {
     },
 
     media: {
-        tablet: "screen and (min-width: 768px)",
-        mobile: "screen and (min-width: 576px)",
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 }

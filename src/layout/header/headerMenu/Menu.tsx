@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {theme} from "../../styles/Theme";
+import {theme} from "../../../styles/Theme";
 
 
 
@@ -35,8 +35,7 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 30px;
         list-style: none;
-        margin-right: 90px;
-        color: #FFFFFF;
+        color: ${theme.colors.font};
         justify-content: space-between;
         align-items: end;
     }
