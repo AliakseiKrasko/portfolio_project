@@ -3,38 +3,42 @@ import styled from "styled-components";
 import {Icon} from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Logo} from "../../components/logo/Logo";
+import {Container} from "../../components/Container";
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper direction="column" align="center">
-                <StyledDiv>
-                    <Logo/>
-                    <StyledTextLink>elias@elias-dev.ml</StyledTextLink>
-                    <Name>Media</Name>
-                </StyledDiv>
-                <StyledDiv>
-                    <StyledText>Web designer and front-end developer</StyledText>
-                    <SocialList>
-                        <SocialItems>
-                            <SocialLink>
-                                <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
-                            </SocialLink>
-                        </SocialItems>
-                        <SocialItems>
-                            <SocialLink>
-                                <Icon iconId={`dribble`} fill={`#ABB2BF`} width={`52`}/>
-                            </SocialLink>
-                        </SocialItems>
-                        <SocialItems>
-                            <SocialLink>
-                                <Icon iconId={`figma`} fill={`#ABB2BF`} width={`52`}/>
-                            </SocialLink>
-                        </SocialItems>
-                    </SocialList>
-                </StyledDiv>
-                <Copyrigth>© Copyright 2022. Made by Elias</Copyrigth>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper direction="column" align="center">
+                    <StyledDiv>
+                        <Logo/>
+                        <StyledTextLink>elias@elias-dev.ml</StyledTextLink>
+                        <Name>Media</Name>
+                    </StyledDiv>
+                    <StyledDiv>
+                        <StyledText>Web designer and front-end developer</StyledText>
+                        <SocialList>
+                            <SocialItems>
+                                <SocialLink>
+                                    <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
+                                </SocialLink>
+                            </SocialItems>
+                            <SocialItems>
+                                <SocialLink>
+                                    <Icon iconId={`dribble`} fill={`#ABB2BF`} width={`52`}/>
+                                </SocialLink>
+                            </SocialItems>
+                            <SocialItems>
+                                <SocialLink>
+                                    <Icon iconId={`figma`} fill={`#ABB2BF`} width={`52`}/>
+                                </SocialLink>
+                            </SocialItems>
+                        </SocialList>
+                    </StyledDiv>
+                    <Copyrigth>© Copyright 2022. Made by Elias</Copyrigth>
+                </FlexWrapper>
+            </Container>
+
         </StyledFooter>
     )
         ;
@@ -48,6 +52,7 @@ const StyledFooter = styled.footer`
 const Name = styled.span`
     color: #FFFFFF;
     margin-left: auto;
+    margin-right: 85px;
     padding-right: 20px;
 `
 
@@ -78,7 +83,7 @@ const StyledTextLink = styled.a`
 const StyledDiv = styled.div`
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
 `
 
 const StyledText = styled.p` 

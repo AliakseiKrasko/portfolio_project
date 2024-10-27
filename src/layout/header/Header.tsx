@@ -6,12 +6,14 @@ import {Menu} from "./headerMenu/Menu";
 import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
+import {GroupSocialIcons} from "../../components/GroupSocialIcons";
 
 export const Header = () => {
     return (
         <StyledHeader>
+            <GroupSocialIcons />
             <Container>
-                <FlexWrapper justify="space-between" align="center">
+                <FlexWrapper justify="space-between" align="center" direction="row">
                     <Logo/>
                     <Menu/>
                     {/*<MobileMenu/>*/}
