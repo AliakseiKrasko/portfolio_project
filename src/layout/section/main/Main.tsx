@@ -11,13 +11,14 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper align="center" justify="space-beetween">
-                    <StyledSocialIcon>
-                        <StyledSpan></StyledSpan>
-                        <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
-                        <Icon iconId={`dribble`} fill={`#ABB2BF`} width={`52`}/>
-                        <Icon iconId={`figma`} fill={`#ABB2BF`} width={`52`}/>
-                    </StyledSocialIcon>
+                <StyledSocialIcon>
+                    <StyledSpan></StyledSpan>
+                    <Icon iconId={`github`} fill={`#ABB2BF`} width={`52`}/>
+                    <Icon iconId={`dribble`} fill={`#ABB2BF`} width={`52`}/>
+                    <Icon iconId={`figma`} fill={`#ABB2BF`} width={`52`}/>
+                </StyledSocialIcon>
+                <WrapperMain>
+
                     <StyledSection>
                         <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend
                             developer</StyledName></StyledMainText>
@@ -32,19 +33,12 @@ export const Main = () => {
                             <p>Currently working on Portfolio</p>
                         </StyledButtonWorks>
                     </WrapperPhoto>
-
-
-                    <StyledQuote>Programmers, like artists, create something out of nothing, and they do it with
-                        elegance</StyledQuote>
-                    <StyledQuoteMini>- Shawn Pearce, Git developer</StyledQuoteMini>
-                    <Icon iconId={`qutes`}
-                          style={{position: 'absolute', left: '412px', top: '665px'}} zIndex={2}/>
-                    <Icon iconId={`qutes`}
-                          style={{position: 'absolute', right: '212px', top: '730px'}} zIndex={2}/>
-                    <StyledSquare></StyledSquare>
-                </FlexWrapper>
+                </WrapperMain>
+                <WrapperQuote>
+                    <Icon iconId="quote" width="712" height="173" viewBox="0 0 712 173"/>
+                </WrapperQuote>
+                <StyledSquare></StyledSquare>
             </Container>
-
         </StyledMain>
     );
 };
@@ -57,6 +51,20 @@ const StyledMain = styled.div`
     background-color: ${theme.colors.primaryBg};
     overflow: hidden;
     position: relative;
+
+
+`
+
+const WrapperMain = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+        flex-direction: column;
+        margin: 70px auto;
+    }
 `
 
 const StyledSection = styled.div`
@@ -64,40 +72,50 @@ const StyledSection = styled.div`
     width: 50%;
     flex-direction: column;
     align-items: start;
-    
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+    }
 `
 
-const WrapperPhoto = styled.div` 
+const WrapperPhoto = styled.div`
     display: flex;
     flex-direction: column;
-    
     width: 50%;
     position: relative;
     margin: 30px 0;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 const StyledPhoto = styled.img`
     padding-top: 30px;
     padding-right: 0;
-    width: 457px;
-    height: 386px;
+    max-width: 450px;
+    max-height: 390px;
     object-fit: contain;
-    
+
 `
 
 const StyledButtonWorks = styled.button`
     display: flex;
-    padding: 10px ;
+    padding: 10px;
     border: 1px solid #ABB2BF;
     background-color: transparent;
     color: ${theme.colors.font};
-    width: 402px;
-    height: 37px;
-    
+    max-width: 400px;
+    max-height: 35px;
+
 `
 
 const StyledMainText = styled.h1`
     color: #FFFFFF;
+
+
 `
 
 const StyledText = styled.p`
@@ -138,36 +156,15 @@ const StyledSpan = styled.span`
     margin-bottom: 10px;
 `
 
-const StyledQuote = styled.div`
+const WrapperQuote = styled.div`
     display: flex;
-    min-width: 712px;
-    height: 35px;
-    padding: 32px;
-    align-items: center;
+
+    max-width: 710px;
+    margin: 120px auto;
     justify-content: center;
-    border: 1px solid #ABB2BF;
-    position: absolute;
-    top: 620px;
-    left: 400px;
-    color: #FFFFFF;
-    font-size: 16px;
-    margin: 60px auto;
+    align-items: center;
 `
 
-const StyledQuoteMini = styled.div`
-    display: flex;
-    min-width: 163px;
-    height: 30px;
-    padding: 32px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ABB2BF;
-    position: absolute;
-    top: 745px;
-    left: 966px;
-    color: #FFFFFF;
-    font-size: 16px;
-`
 
 const StyledSquare = styled.span`
     min-width: 90px;
@@ -178,6 +175,5 @@ const StyledSquare = styled.span`
     top: 710px;
 
 `
-
 
 
