@@ -77,7 +77,7 @@ const WrapperPhoto = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-    position: relative;
+    justify-content: end;
     margin: 30px 0;
 
     @media ${theme.media.tablet} {
@@ -93,7 +93,7 @@ const StyledPhoto = styled.img`
     max-width: 450px;
     max-height: 390px;
     object-fit: contain;
-
+    align-self: center;
 `
 
 const StyledButtonWorks = styled.button`
@@ -102,9 +102,9 @@ const StyledButtonWorks = styled.button`
     border: 1px solid #ABB2BF;
     background-color: transparent;
     color: ${theme.colors.font};
-    max-width: 400px;
+    width: 380px;
     max-height: 35px;
-
+    align-self: center;
 `
 
 const StyledMainText = styled.h1`

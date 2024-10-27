@@ -43,6 +43,12 @@ const StyledInfo = styled.div`
     display: flex;
     justify-content: end;
     align-items: end;
+
+    @media ${theme.media.tablet} {
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+    }
 `
 
 const StyledWrapper = styled.div` 
