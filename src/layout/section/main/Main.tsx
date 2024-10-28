@@ -6,6 +6,7 @@ import {Icon} from "../../../components/icon/Icon";
 import {StyledButton} from "../../../components/StyledButton";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Main = () => {
     return (
@@ -108,8 +109,8 @@ const StyledButtonWorks = styled.button`
 `
 
 const StyledMainText = styled.h1`
-    color: #FFFFFF;
-
+    ${font({weight: 700, Fmax: 32, Fmin: 24})}
+    
 
 `
 
