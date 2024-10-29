@@ -65,7 +65,7 @@ const WrapperMain = styled.div`
 
 const StyledSection = styled.div`
     display: flex;
-    width: 50%;
+    max-width: 50%;
     flex-direction: column;
     align-items: start;
 
@@ -77,7 +77,7 @@ const StyledSection = styled.div`
 const WrapperPhoto = styled.div`
     display: flex;
     flex-direction: column;
-    width: 50%;
+    max-width: 50%;
     justify-content: end;
     margin: 30px 0;
 
@@ -91,7 +91,7 @@ const WrapperPhoto = styled.div`
 const StyledPhoto = styled.img`
     padding-top: 30px;
     padding-right: 0;
-    max-width: 450px;
+    width: 100%;
     max-height: 390px;
     object-fit: contain;
     align-self: center;
