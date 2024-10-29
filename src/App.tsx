@@ -6,13 +6,14 @@ import {Footer} from "./layout/footer/Footer";
 import {Projects} from "./layout/section/projects/Projects";
 import {About} from "./layout/section/about/About";
 import {Contact} from "./layout/section/contact/Contact";
+import {Particle} from "./components/particle/Particle";
 
 
 
 function App() {
     return (
         <div className="App">
-
+            <Particle />
             <Header />
             <Main />
             <Skills />

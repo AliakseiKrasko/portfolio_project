@@ -7,6 +7,9 @@ import {StyledButton} from "../../../components/StyledButton";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import Typewriter from 'typewriter-effect';
+
+
 
 export const Main = () => {
     return (
@@ -16,10 +19,20 @@ export const Main = () => {
                 <WrapperMain>
 
                     <StyledSection>
+
                         <StyledMainText>Alex <StyledName>Krasko</StyledName> is a <StyledName>frontend
                             developer</StyledName></StyledMainText>
-                        <StyledText>He builds responsive websites and interactive web applications where {'\n'}
-                            technology meets creativity</StyledText>
+                        <Typewriter
+                            options={{
+                                strings: ["I'm builds responsive websites and interactive web applications where technology meets creativity"],
+                                autoStart: true,
+                                loop: true,
+                                delay: 30,
+                                deleteSpeed: 30
+                            }}
+                        />
+                        {/*<StyledText>He builds responsive websites and interactive web applications where {'\n'}*/}
+                        {/*    technology meets creativity</StyledText>*/}
                         <StyledButton marginTop="24px">Contact me !!</StyledButton>
                     </StyledSection>
                     <WrapperPhoto>
@@ -29,6 +42,8 @@ export const Main = () => {
                             <p>Currently working on Portfolio</p>
                         </StyledButtonWorks>
                     </WrapperPhoto>
+
+
                 </WrapperMain>
                 <WrapperQuote>
                     <Icon iconId="quote" width="712" height="173" viewBox="0 0 712 173"/>
@@ -46,9 +61,6 @@ const StyledMain = styled.div`
     justify-content: space-between;
     background-color: ${theme.colors.primaryBg};
     overflow: hidden;
-    position: relative;
-
-
 `
 
 const WrapperMain = styled.div`
@@ -78,8 +90,8 @@ const WrapperPhoto = styled.div`
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: end;
-    margin: 30px 0;
+    align-items: end;
+    margin: 40px 0;
 
     @media ${theme.media.tablet} {
         width: 100%;
@@ -89,13 +101,14 @@ const WrapperPhoto = styled.div`
 `
 
 const StyledPhoto = styled.img`
-    padding-top: 30px;
-    padding-right: 0;
+    //padding-top: 30px;
+    //padding-right: 0;
     width: 100%;
-    max-height: 390px;
-    object-fit: contain;
-    align-self: center;
+    height: auto;
+    
+    align-self: end;
     background-size: cover;
+    object-fit: cover;
 `
 
 const StyledButtonWorks = styled.button`
@@ -104,7 +117,7 @@ const StyledButtonWorks = styled.button`
     border: 1px solid #ABB2BF;
     background-color: transparent;
     color: ${theme.colors.font};
-    width: 380px;
+    min-width: 380px;
     height: 35px;
     align-self: center;
     background-size: cover;
@@ -117,7 +130,7 @@ const StyledButtonWorks = styled.button`
 
 const StyledMainText = styled.h1`
     ${font({weight: 700, Fmax: 32, Fmin: 24})}
-    
+    margin-bottom: 20px;
 
 `
 
@@ -131,7 +144,6 @@ const StyledText = styled.p`
 const StyledName = styled.span`
     color: #E4A2E7;
 `
-
 
 
 const WrapperQuote = styled.div`

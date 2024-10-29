@@ -34,6 +34,7 @@ export const Projects = () => {
 const CardWrapper = styled.section`
     padding: 20px 0;
     margin-top: 100px;
+    
 `
 
 const StyledProjects = styled.div`

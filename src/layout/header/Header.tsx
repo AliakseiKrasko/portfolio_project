@@ -27,7 +27,7 @@ const StyledHeader = styled.header`
     display: flex;
     margin: 0 auto;
     background-color: #282C33;
-
+    
     min-height: 61px;
     justify-content: space-between;
     padding-top: 23px;
@@ -45,4 +45,5 @@ const HeaderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 `

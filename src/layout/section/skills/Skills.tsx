@@ -76,9 +76,12 @@ export const Skills = () => {
     );
 };
 
+
+
 const StyledSkills = styled.section`
-       
+    position: relative;
     margin-top: 73px;
     max-height: 90vh;
+    z-index: 10;
 `
 

@@ -43,7 +43,7 @@ const WrapperAbout = styled.section`
     max-width: 100%;
     margin: 110px auto;
     padding-top: 48px;
-
+    position: relative;
 
     
 `
