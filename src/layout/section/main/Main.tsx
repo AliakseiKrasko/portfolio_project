@@ -65,7 +65,7 @@ const WrapperMain = styled.div`
 
 const StyledSection = styled.div`
     display: flex;
-    max-width: 50%;
+    width: 50%;
     flex-direction: column;
     align-items: start;
 
@@ -77,7 +77,7 @@ const StyledSection = styled.div`
 const WrapperPhoto = styled.div`
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    width: 50%;
     justify-content: end;
     margin: 30px 0;
 
@@ -95,6 +95,7 @@ const StyledPhoto = styled.img`
     max-height: 390px;
     object-fit: contain;
     align-self: center;
+    background-size: cover;
 `
 
 const StyledButtonWorks = styled.button`
@@ -104,8 +105,14 @@ const StyledButtonWorks = styled.button`
     background-color: transparent;
     color: ${theme.colors.font};
     width: 380px;
-    max-height: 35px;
+    height: 35px;
     align-self: center;
+    background-size: cover;
+
+    @media ${theme.media.tablet} {
+        width: 320px;
+        height: 60px;
+    }
 `
 
 const StyledMainText = styled.h1`
@@ -144,6 +151,10 @@ const StyledSquare = styled.span`
     position: absolute;
     right: -15px;
     top: 710px;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 
 `
 
