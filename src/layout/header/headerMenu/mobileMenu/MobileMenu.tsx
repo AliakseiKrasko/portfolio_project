@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "../../../../styles/Theme";
 
 
-
 export const MobileMenu = () => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    const onBurgerBtnClick = () => {
+        setMenuIsOpen(!menuIsOpen)
+    }
     return (
         <StyledMobileMenu>
-            <MobileButton isOpen={true}>
+            <MobileButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </MobileButton>
 
-            <MobileMenuPopap isOpen={true}>
+            <MobileMenuPopap isOpen={menuIsOpen} onClick={ ()=>{setMenuIsOpen(false)} }>
                 <ul>
                     <li>
                         <a href=""><span>#</span>home</a>
@@ -43,9 +46,9 @@ const StyledMobileMenu = styled.nav`
     @media ${theme.media.tablet} {
         display: block;
     }
-    `
+`
 
-const MobileMenuPopap = styled.div<{isOpen: boolean}>` 
+const MobileMenuPopap = styled.div<{ isOpen: boolean }>`
     position: fixed;
     background: ${theme.colors.primaryBg};
     top: 0;
@@ -54,21 +57,19 @@ const MobileMenuPopap = styled.div<{isOpen: boolean}>`
     left: -9px;
     z-index: 99999;
     display: none;
-    
-    ${props => props.isOpen && css<{isOpen: boolean}>`
+
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
         display: flex;
         justify-content: center;
         align-items: center;
     `}
-   
     ul {
         display: block;
         gap: 30px;
         color: ${theme.colors.font};
-       
+
     }
 
-    
 
     ul > li > p {
         color: ${theme.colors.accent};
@@ -91,10 +92,10 @@ const MobileMenuPopap = styled.div<{isOpen: boolean}>`
 
     ul > li > a > span {
         color: ${theme.colors.secondaryBg};
-    
-    
+
+
     }
-    
+
     ul {
         display: flex;
         flex-direction: column;
@@ -102,10 +103,10 @@ const MobileMenuPopap = styled.div<{isOpen: boolean}>`
         justify-content: center;
         align-items: center;
     }
-    
+
 `
 
-const MobileButton = styled.button<{isOpen: boolean}>`
+const MobileButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
     top: 30px;
     right: 10px;
@@ -128,10 +129,10 @@ const MobileButton = styled.button<{isOpen: boolean}>`
         transition: background-color 0.3s;
 
         /* Скрываем центральную линию при открытом состоянии */
-        ${props => props.isOpen && css<{isOpen: boolean}>`
+
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
             background-color: rgba(255, 255, 255, 0);
         `}
-
         &::before,
         &::after {
             content: "";
@@ -142,13 +143,14 @@ const MobileButton = styled.button<{isOpen: boolean}>`
         }
 
         /* Верхняя линия: полная ширина */
+
         &::before {
             width: 24px; /* Полная ширина */
             top: -8px; /* Позиционируем выше основной линии */
             left: 0;
             display: none;
 
-            ${props => props.isOpen && css<{isOpen: boolean}>`
+            ${props => props.isOpen && css<{ isOpen: boolean }>`
                 transform: rotate(45deg); /* Поворачиваем для создания крестика */
                 top: 0; /* Центрируем по вертикали */
                 display: block;
@@ -156,12 +158,13 @@ const MobileButton = styled.button<{isOpen: boolean}>`
         }
 
         /* Нижняя линия: короче и прижата к правому краю */
+
         &::after {
             width: 15px; /* Более короткая линия */
             top: 8px; /* Позиционируем ниже основной линии */
             right: 0; /* Прижимаем к правому краю */
 
-            ${props => props.isOpen && css<{isOpen: boolean}>`
+            ${props => props.isOpen && css<{ isOpen: boolean }>`
                 transform: rotate(-45deg); /* Поворачиваем для создания крестика */
                 top: 0; /* Центрируем по вертикали */
                 right: 0;

@@ -33,7 +33,7 @@ export const Card = (props: CardPropsType) => {
 
 // Styled Components
 const StyledCard = styled.div`
-    width: 300px;
+    width: 298px;
     height: 380px;
     border: 1px solid #ABB2BF;
     overflow: hidden;

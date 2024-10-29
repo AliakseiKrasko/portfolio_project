@@ -16,7 +16,7 @@ export const Header = () => {
                 <FlexWrapper justify="space-between" align="center" direction="row">
                     <Logo/>
                     <Menu/>
-                    {/*<MobileMenu/>*/}
+                    <MobileMenu/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
