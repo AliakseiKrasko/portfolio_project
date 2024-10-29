@@ -79,6 +79,6 @@ export const Skills = () => {
 const StyledSkills = styled.section`
        
     margin-top: 73px;
-    min-height: 90vh;
+    max-height: 90vh;
 `
 

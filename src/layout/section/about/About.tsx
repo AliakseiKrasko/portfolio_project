@@ -41,7 +41,7 @@ export const About = () => {
 
 const WrapperAbout = styled.section`
     max-width: 100%;
-    margin: 0 auto;
+    margin: 110px auto;
     padding-top: 48px;
 
 

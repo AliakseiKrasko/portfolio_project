@@ -41,7 +41,7 @@ export const Main = () => {
 
 
 const StyledMain = styled.div`
-    height: 130vh;
+    max-height: 130vh;
     margin: 60px auto;
     justify-content: space-between;
     background-color: ${theme.colors.primaryBg};
