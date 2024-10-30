@@ -10,7 +10,7 @@ import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={"skills"}>
             <Container>
                 <SectionTitle title="skills" lineLength="239px"/>
                 <FlexWrapper justify="space-between" gap="20px" margin="0 auto">
@@ -59,8 +59,9 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    margin-top: 73px;
+    //margin-top: 80px;
     height: auto;
+    padding-top: 50px;
 `;
 
 const IconBlock = styled.div`

@@ -13,7 +13,7 @@ import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id={"home"}>
             <Container>
 
                 <WrapperMain>
@@ -56,8 +56,9 @@ export const Main = () => {
 
 
 const StyledMain = styled.div`
-    max-height: 130vh;
-    margin: 60px auto;
+    width: 100%;
+    min-height: 130vh;
+    margin: 80px auto;
     justify-content: space-between;
     background-color: ${theme.colors.primaryBg};
     overflow: hidden;

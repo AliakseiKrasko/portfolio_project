@@ -8,7 +8,7 @@ import {theme} from "../../../styles/Theme";
 
 export const Contact = () => {
     return (
-        <StyledContact>
+        <StyledContact id={"contact"}>
             <Container>
                 <SectionTitle title="contact" lineLength="130px"/>
                 <FlexWrapper>
@@ -31,6 +31,8 @@ export const Contact = () => {
 
 const StyledContact = styled.div` 
     margin-top: 80px;
+    min-height: 80vh;
+    padding-top: 50px;
 `
 
 const StyledText = styled.div` 

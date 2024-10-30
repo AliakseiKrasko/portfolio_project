@@ -9,16 +9,19 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <li>
-                    <a href=""><span>#</span>home</a>
+                    <a href="#home"><span>#</span>home</a>
                 </li>
                 <li>
-                    <a href=""><span>#</span>works</a>
+                    <a href="#skills"><span>#</span>skills</a>
                 </li>
                 <li>
-                    <a href=""><span>#</span>about-me</a>
+                    <a href="#projects"><span>#</span>project</a>
                 </li>
                 <li>
-                    <a href=""><span>#</span>contacts</a>
+                    <a href="#about"><span>#</span>about-me</a>
+                </li>
+                <li>
+                    <a href="#contact"><span>#</span>contacts</a>
                 </li>
                 <li>
                     <p>EN &#x2C5;</p>

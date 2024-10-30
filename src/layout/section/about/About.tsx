@@ -8,7 +8,7 @@ import {theme} from "../../../styles/Theme";
 
 export const About = () => {
     return (
-        <WrapperAbout>
+        <WrapperAbout id={"about"}>
             <Container>
                 <StyledAbout>
                     <SectionTitle title="about-me" lineLength="300px"/>
@@ -42,7 +42,7 @@ export const About = () => {
 const WrapperAbout = styled.section`
     max-width: 100%;
     margin: 110px auto;
-    padding-top: 48px;
+    padding-top: 50px;
     position: relative;
 
     

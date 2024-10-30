@@ -12,7 +12,7 @@ import {Container} from "../../../components/Container";
 
 export const Projects = () => {
     return (
-        <CardWrapper>
+        <CardWrapper id={"projects"}>
             <Container>
                 <StyledProjects>
                     <SectionTitle title="projects" lineLength="300px"/>
@@ -32,7 +32,7 @@ export const Projects = () => {
 };
 
 const CardWrapper = styled.section`
-    padding: 20px 0;
+    padding: 50px 0;
     margin-top: 100px;
     
 `

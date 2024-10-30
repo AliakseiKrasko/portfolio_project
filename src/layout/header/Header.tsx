@@ -7,6 +7,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
 import {GroupSocialIcons} from "../../components/GroupSocialIcons";
+import {theme} from "../../styles/Theme";
 
 export const Header = () => {
     return (
@@ -24,20 +25,26 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    //display: flex;
-    //margin: 0 auto;
+    display: flex;
+    
     //background-color: #282C33;
     
     //min-height: 61px;
     //justify-content: center;
-    //padding-top: 23px;
+    padding-top: 10px;
     //font-family: 'Fira Code', monospace;
-
+    //width: 100%;
     //position: fixed;
-    //left: -10px;
+    //left: 0px;
     //right: 0;
     //top: 0;
     //z-index: 999;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+        
+        
+    }
 
 
 `

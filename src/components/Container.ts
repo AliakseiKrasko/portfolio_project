@@ -13,7 +13,7 @@ export const Container = styled.div`
     @media ${theme.media.tablet} {
         width: 100%;
         padding: 10px 20px;
-        
+        justify-content: center;
         
         
     }
