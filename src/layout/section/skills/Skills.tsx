@@ -20,7 +20,7 @@ export const Skills = () => {
                     <WrapperGrid>
                         <Skill
                             title="Languages"
-                            skills="JavaScript, TypeScript, PHP"
+                            skills="TypeScript JavaScript Python"
                             gridColumn={1}
                             gridRow={1}
                         />
@@ -31,21 +31,22 @@ export const Skills = () => {
                             gridRow={1}
                         />
 
+
                         <Skill
-                            title="Languages"
-                            skills="JavaScript, TypeScript, PHP"
+                            title="Tools"
+                            skills="VSCode Neovim Linux Figma XFCE Arch Git Font Awesome"
                             gridColumn={2}
                             gridRow={2}
                         />
                         <Skill
-                            title="Databases"
-                            skills="MySQL, MongoDB, PostgreSQL"
+                            title="Other"
+                            skills="HTML CSS EJS SCSS REST Jinja"
                             gridColumn={3}
                             gridRow={1}
                         />
                         <Skill
-                            title="Languages"
-                            skills="JavaScript, TypeScript, PHP"
+                            title="Frameworks"
+                            skills="React Vue Lua Disnake Discord.js Flask Express.js"
                             gridColumn={3}
                             gridRow={2}
                         />
@@ -87,12 +88,14 @@ const StyledIcon = styled.img`
 const WrapperGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    grid-template-rows: auto 1fr;
+    gap: 15px;
     width: 60%;
     align-items: start;
     justify-content: end;
     margin-top: 60px;
-    row-gap: 5px;
-    column-gap: 15px;
+    
+       
 
     @media ${theme.media.tablet} {
         width: 100%;
