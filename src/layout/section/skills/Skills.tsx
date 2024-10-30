@@ -59,8 +59,8 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    //margin-top: 80px;
-    height: auto;
+    margin-top: 80px;
+    height: 80vh;
     padding-top: 50px;
 `;
 

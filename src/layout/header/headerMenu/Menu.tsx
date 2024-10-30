@@ -8,27 +8,27 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <li>
-                    <Link activeClass="active" to="home" spy={true} smooth={true} hashSpy={true} offset={-50}>
+                    <Link activeClass="active" to="home" spy={true} smooth={true} hashSpy={true} offset={-40}>
                         <span>#</span>home
                     </Link>
                 </li>
                 <li>
-                    <Link activeClass="active" to="skills" spy={true} smooth={true} hashSpy={true} offset={-50}>
+                    <Link activeClass="active" to="skills" spy={true} smooth={true} hashSpy={true} offset={-40}>
                         <span>#</span>skills
                     </Link>
                 </li>
                 <li>
-                    <Link activeClass="active" to="project" spy={true} smooth={true} hashSpy={true} offset={-70}>
+                    <Link activeClass="active" to="project" spy={true} smooth={true} hashSpy={true} offset={-40}>
                         <span>#</span>project
                     </Link>
                 </li>
                 <li>
-                    <Link activeClass="active" to="about" spy={true} smooth={true} hashSpy={true} offset={-70}>
+                    <Link activeClass="active" to="about" spy={true} smooth={true} hashSpy={true} offset={-30}>
                         <span>#</span>about-me
                     </Link>
                 </li>
                 <li>
-                    <Link activeClass="active" to="contacts" spy={true} smooth={true} hashSpy={true} offset={-70}>
+                    <Link activeClass="active" to="contacts" spy={true} smooth={true} hashSpy={true} offset={-60}>
                         <span>#</span>contacts
                     </Link>
                 </li>
