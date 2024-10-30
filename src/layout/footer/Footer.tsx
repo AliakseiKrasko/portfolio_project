@@ -4,6 +4,7 @@ import {Icon} from "../../components/icon/Icon";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {Logo} from "../../components/logo/Logo";
 import {Container} from "../../components/Container";
+import {GoTopBtn} from "../../components/goTopBtn/GoTopBtn";
 
 export const Footer = () => {
     return (
@@ -48,6 +49,7 @@ const StyledFooter = styled.footer`
     min-height: 30vh;
     margin-top: 80px;
     border-top: 1px solid #ABB2BF;
+    position: relative;
 `
 const Name = styled.span`
     color: #FFFFFF;

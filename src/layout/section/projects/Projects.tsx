@@ -12,7 +12,7 @@ import {Container} from "../../../components/Container";
 
 export const Projects = () => {
     return (
-        <CardWrapper id={"projects"}>
+        <CardWrapper id={"project"}>
             <Container>
                 <StyledProjects>
                     <SectionTitle title="projects" lineLength="300px"/>

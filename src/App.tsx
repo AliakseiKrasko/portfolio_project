@@ -7,6 +7,8 @@ import {Projects} from "./layout/section/projects/Projects";
 import {About} from "./layout/section/about/About";
 import {Contact} from "./layout/section/contact/Contact";
 import {Particle} from "./components/particle/Particle";
+import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
+import React from "react";
 
 
 
@@ -21,6 +23,7 @@ function App() {
             <About />
             <Contact/>
             <Footer />
+            <GoTopBtn />
         </div>
     );
 }

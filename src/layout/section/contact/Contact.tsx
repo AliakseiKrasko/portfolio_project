@@ -8,7 +8,7 @@ import {theme} from "../../../styles/Theme";
 
 export const Contact = () => {
     return (
-        <StyledContact id={"contact"}>
+        <StyledContact id={"contacts"}>
             <Container>
                 <SectionTitle title="contact" lineLength="130px"/>
                 <FlexWrapper>
