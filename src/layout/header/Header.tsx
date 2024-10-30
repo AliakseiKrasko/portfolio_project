@@ -11,8 +11,8 @@ import {GroupSocialIcons} from "../../components/GroupSocialIcons";
 export const Header = () => {
     return (
         <StyledHeader>
-            <GroupSocialIcons/>
             <Container>
+                <GroupSocialIcons/>
                 <HeaderWrapper>
                     <Logo/>
                     <Menu/>
@@ -24,20 +24,20 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    display: flex;
-    margin: 0 auto;
-    background-color: #282C33;
+    //display: flex;
+    //margin: 0 auto;
+    //background-color: #282C33;
     
-    min-height: 61px;
-    justify-content: center;
-    padding-top: 23px;
-    font-family: 'Fira Code', monospace;
+    //min-height: 61px;
+    //justify-content: center;
+    //padding-top: 23px;
+    //font-family: 'Fira Code', monospace;
 
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 999;
+    //position: fixed;
+    //left: -10px;
+    //right: 0;
+    //top: 0;
+    //z-index: 999;
 
 
 `

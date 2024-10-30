@@ -88,7 +88,7 @@ const StyledIcon = styled.img`
 const WrapperGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
-    grid-template-rows: auto 1fr;
+    //grid-template-rows: auto 1fr;
     gap: 15px;
     width: 60%;
     align-items: start;

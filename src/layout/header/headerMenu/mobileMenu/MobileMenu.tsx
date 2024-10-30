@@ -45,6 +45,7 @@ const StyledMobileMenu = styled.nav`
 
     @media ${theme.media.tablet} {
         display: block;
+      
     }
 `
 
