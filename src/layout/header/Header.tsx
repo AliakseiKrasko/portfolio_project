@@ -34,11 +34,11 @@ const StyledHeader = styled.header`
     padding-top: 10px;
     //font-family: 'Fira Code', monospace;
     //width: 100%;
-    //position: fixed;
-    //left: 0px;
-    //right: 0;
-    //top: 0;
-    //z-index: 999;
+    position: fixed;
+    left: 0px;
+    right: 0;
+    top: 0;
+    z-index: 999;
 
     @media ${theme.media.tablet} {
         width: 100%;

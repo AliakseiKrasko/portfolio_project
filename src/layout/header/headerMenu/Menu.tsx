@@ -60,11 +60,12 @@ const StyledMenu = styled.nav`
 
         &:hover {
             color: #FFFFFF;
+            font-weight: bold;
             cursor: pointer;
         }
     }
 
-    ul > li > .active { 
+    ul > li > .active, ul > li > a.active { 
         color: #FFFFFF;
         font-weight: bold;
         background-color: #333; /* Яркий фон для проверки */

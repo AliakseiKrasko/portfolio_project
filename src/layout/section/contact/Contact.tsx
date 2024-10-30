@@ -19,8 +19,8 @@ export const Contact = () => {
                     <StyledInfo>
                         <StyledWrapper>
                             <h4>Message me here</h4>
-                            <StyledDiv><Icon iconId="email" width="32" height="32" viewBox="0 0 32 32"/> <p>!Elias#3519</p></StyledDiv>
-                            <StyledDiv><Icon iconId="discord" width="32" height="32" viewBox="0 0 32 32"/><p> elias@elias.me</p></StyledDiv>
+                            <StyledDiv><Icon iconId="email" width="32" height="32" viewBox="0 0 32 32"/> <p>alexkrasko1985@gmail.com</p></StyledDiv>
+                            <StyledDiv><Icon iconId="discord" width="32" height="32" viewBox="0 0 32 32"/><p> https://t.me/alekskrasko</p></StyledDiv>
                         </StyledWrapper>
                     </StyledInfo>
                 </FlexWrapper>
@@ -31,7 +31,7 @@ export const Contact = () => {
 
 const StyledContact = styled.div` 
     margin-top: 80px;
-    min-height: 80vh;
+    min-height: 50vh;
     padding-top: 50px;
 `
 
@@ -57,7 +57,7 @@ const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px solid #FFFFFF;
-    width: 220px;
+    width: auto;
     height: 140px;
     justify-content: center;
     align-items: start;
@@ -76,4 +76,8 @@ const StyledDiv = styled.div`
     display: flex;
     align-items: center;
     margin-top: 16px;
+    
+    &:hover {
+        cursor: pointer;
+    }
 `
