@@ -18,12 +18,12 @@ export const Projects = () => {
                     <SectionTitle title="projects" lineLength="300px"/>
                     <Icon iconId="view" width="200px" height="40px"/>
                 </StyledProjects>
-                <FlexWrapper align="center" justify="start" gap="20px" margin="0 auto" wrap="wrap">
+                <FlexWrapper align="start" justify="start" gap="20px" margin="0 auto" wrap="wrap">
                     <Card img={project} title="HTML SCSS Python Flask" h4="ChertNodes"
-                          description="Minecraft servers hosting "/>
+                          description="Minecraft servers hosting Minecraft servers hosting Minecraft servers hosting Minecraft servers hosting"/>
                     <Card img={project2} title="snn" h4="ProtectX" description="Discord anti-crash bot"/>
                     <Card img={project3} title="snn" h4="ProtectX" description="Get answers to your kahoot quiz"/>
-                    {/*<Card img={project2} title="snn" h4="ProtectX" description="Get answers to your kahoot quiz"/>*/}
+
                 </FlexWrapper>
             </Container>
 

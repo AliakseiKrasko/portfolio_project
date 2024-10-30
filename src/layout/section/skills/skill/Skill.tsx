@@ -1,16 +1,9 @@
 import React from 'react';
-import {Icon} from "../../../../components/icon/Icon";
 import styled from "styled-components";
 
-type SkillIconType = {
-    iconId: string;
-    skillTitle: string;
-
-}
-
 type SkillPropsType = {
-    title: string;
-    skills: SkillIconType[]; // Массив иконок с текстом
+    title: string;         // Заголовок навыка
+    skills: string;        // Строка с навыками
     gridColumn?: number;
     gridRow?: number;
 }
@@ -19,12 +12,7 @@ export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill gridColumn={props.gridColumn} gridRow={props.gridRow}>
             <SkillCardTitle>{props.title}</SkillCardTitle>
-            {props.skills.map((skill, index) => (
-                <SkillIcon key={index}>
-                    <Icon iconId={skill.iconId} width="20px" height="20px" viewBox="0 0 200 200" />
-                    <SkillTitle>{skill.skillTitle}</SkillTitle>
-                </SkillIcon>
-            ))}
+            <SkillsText>{props.skills}</SkillsText>
         </StyledSkill>
     );
 };
@@ -34,31 +22,26 @@ const SkillCardTitle = styled.h3`
     border-bottom: 1px solid #ABB2BF;
     color: #FFFFFF;
     margin: 0;
-    
 `;
 
 const StyledSkill = styled.div<{ gridColumn?: number; gridRow?: number }>`
     display: flex;
     flex-direction: column;
-    min-width: 178px;
+    max-width: 200px;
+    min-width: 100px;
+    height: auto;
     border: 1px solid #ABB2BF;
     overflow: hidden;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     grid-column: ${props => props.gridColumn || 'auto'};
     grid-row: ${props => props.gridRow || 'auto'};
 `;
 
-const SkillTitle = styled.h4`
+const SkillsText = styled.div`
     color: #ABB2BF;
     margin: 0;
     padding: 10px;
+    text-align: center;
+    justify-items: start;
 `;
-
-const SkillIcon = styled.div`
-    display: flex;
-    align-items: center;
-    overflow: visible;
-    
-`;
-

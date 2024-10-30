@@ -35,7 +35,7 @@ export const Card = (props: CardPropsType) => {
 const StyledCard = styled.div`
     width: 32%;   /* Максимальная ширина карточки */
     min-width: 300px;
-    height: 390px;
+    height: auto;
     border: 1px solid #ABB2BF;
     overflow: hidden;
 

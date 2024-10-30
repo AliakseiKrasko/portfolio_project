@@ -29,7 +29,7 @@ const StyledHeader = styled.header`
     background-color: #282C33;
     
     min-height: 61px;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 23px;
     font-family: 'Fira Code', monospace;
 

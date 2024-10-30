@@ -1,87 +1,102 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle"
+import {SectionTitle} from "../../../components/SectionTitle";
 import {Skill} from "./skill/Skill";
-import {IconBlock} from "./Icons/IconBlock";
-import {StyledGrid} from "../../../components/GridWrapper";
+
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
-
+import group from "../../../assets/images/Group 36.svg";
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
                 <SectionTitle title="skills" lineLength="239px"/>
-                <FlexWrapper>
-                    <IconBlock/>
-                    <StyledGrid>
+                <FlexWrapper justify="space-between" gap="20px" margin="0 auto">
+                    <IconBlock>
+                        <StyledIcon src={group} alt="group"/>
+                    </IconBlock>
+                    <WrapperGrid>
                         <Skill
                             title="Languages"
-                            skills={[
-                                {iconId: "javascript" , skillTitle: "JavaScript"},
-                                {iconId: "ts", skillTitle: "TypeScript"},
-                                {iconId: "bootstrap", skillTitle: "PHP"}
-                            ]}
+                            skills="JavaScript, TypeScript, PHP"
                             gridColumn={1}
                             gridRow={1}
                         />
                         <Skill
                             title="Databases"
-                            skills={[
-                                {iconId: "bootstrap", skillTitle: "JavaScript"},
-                                {iconId: "react-icon", skillTitle: "React"},
-                                {iconId: "css-icon", skillTitle: "CSS"}
-                            ]}
+                            skills="MySQL, MongoDB, PostgreSQL"
                             gridColumn={2}
                             gridRow={1}
                         />
+
                         <Skill
-                            title="Other"
-                            skills={[
-                                {iconId: "html", skillTitle: "HTML"},
-                                {iconId: "css", skillTitle: "CSS"},
-                                {iconId: "sass", skillTitle: "SASS"}
-                            ]}
+                            title="Languages"
+                            skills="JavaScript, TypeScript, PHP"
                             gridColumn={2}
                             gridRow={2}
                         />
                         <Skill
-                            title="Tools"
-                            skills={[
-                                {iconId: "js-icon", skillTitle: "VSCode"},
-                                {iconId: "react-icon", skillTitle: "Figma"},
-                                {iconId: "css-icon", skillTitle: "Git"}
-                            ]}
+                            title="Databases"
+                            skills="MySQL, MongoDB, PostgreSQL"
                             gridColumn={3}
                             gridRow={1}
                         />
                         <Skill
-                            title="Frameworks"
-                            skills={[
-                                {iconId: "js-icon", skillTitle: "JavaScript"},
-                                {iconId: "react-icon", skillTitle: "TypeScript"},
-                                {iconId: "css-icon", skillTitle: "PHP"}
-                            ]}
+                            title="Languages"
+                            skills="JavaScript, TypeScript, PHP"
                             gridColumn={3}
                             gridRow={2}
                         />
 
-
-                    </StyledGrid>
+                    </WrapperGrid>
                 </FlexWrapper>
-
             </Container>
         </StyledSkills>
     );
 };
 
-
-
 const StyledSkills = styled.section`
-    position: relative;
     margin-top: 73px;
-    max-height: 90vh;
-    z-index: 10;
-`
+    height: auto;
+`;
 
+const IconBlock = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: end;
+    margin: 40px 0;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+const StyledIcon = styled.img`
+    width: 100%;
+    height: auto;
+    align-self: end;
+    background-size: cover;
+    object-fit: cover;
+`;
+
+const WrapperGrid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    width: 60%;
+    align-items: start;
+    justify-content: end;
+    margin-top: 60px;
+    row-gap: 5px;
+    column-gap: 15px;
+
+    @media ${theme.media.tablet} {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+`;
