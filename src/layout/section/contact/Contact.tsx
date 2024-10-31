@@ -41,7 +41,7 @@ export const Contact = () => {
 const StyledContact = styled.div`
 
     margin-top: 80px;
-    min-height: 50vh;
+    min-height: 80vh;
     padding-top: 50px;
     align-items: start;
 
